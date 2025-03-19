@@ -20,37 +20,54 @@ export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([
     {
       id: 1,
-      name: "E-commerce Dashboard",
-      description: "A modern e-commerce dashboard with analytics, inventory management, and order tracking features.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80",
-      github: "https://github.com/renanfrontend/ecommerce-dashboard",
+      name: "Ignite Call",
+      description: "A powerful scheduling application that integrates with Google Calendar, allowing users to manage appointments efficiently.",
+      technologies: ["React", "Next.js", "TypeScript", "Prisma", "Google API"],
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3882&q=80",
+      github: "https://github.com/renanfrontend/ignite-call",
+      demo: "https://ignite-call-demo.vercel.app",
     },
     {
       id: 2,
-      name: "Social Media App",
-      description: "A fully responsive social media application with real-time chat, user profiles, and post sharing.",
-      technologies: ["React", "Firebase", "Styled Components", "Redux"],
-      image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      github: "https://github.com/renanfrontend/social-media-app",
-      demo: "https://social-app-demo.example.com",
+      name: "DT Money",
+      description: "A personal finance application for tracking income and expenses with interactive charts and transaction history.",
+      technologies: ["React", "TypeScript", "Styled Components", "MirageJS"],
+      image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      github: "https://github.com/renanfrontend/dt-money",
     },
     {
       id: 3,
-      name: "Personal Finance Tracker",
-      description: "A finance tracking application with expense categorization, budgeting, and visualization tools.",
-      technologies: ["Next.js", "TypeScript", "Chart.js", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      github: "https://github.com/renanfrontend/finance-tracker",
-      demo: "https://finance-tracker-demo.example.com",
+      name: "Coffee Delivery",
+      description: "An e-commerce application for a coffee shop with product listings, shopping cart, and checkout functionalities.",
+      technologies: ["React", "TypeScript", "Context API", "React Hook Form"],
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3543&q=80",
+      github: "https://github.com/renanfrontend/coffee-delivery",
+      demo: "https://coffee-delivery-demo.vercel.app",
     },
     {
       id: 4,
-      name: "Weather Application",
-      description: "A weather forecast application with location detection, 5-day forecasts, and weather alerts.",
-      technologies: ["React", "OpenWeather API", "Geolocation API", "PWA"],
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      github: "https://github.com/renanfrontend/weather-app",
+      name: "Ignite Shop",
+      description: "A modern e-commerce platform for clothing with Stripe integration for seamless payment processing.",
+      technologies: ["Next.js", "TypeScript", "Stripe API", "Stitches"],
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=7952&q=80",
+      github: "https://github.com/renanfrontend/ignite-shop",
+      demo: "https://ignite-shop-demo.vercel.app",
+    },
+    {
+      id: 5,
+      name: "Ignite Timer",
+      description: "A productivity tool based on the Pomodoro technique to improve focus and time management.",
+      technologies: ["React", "TypeScript", "Styled Components", "Immer"],
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=6000&q=80",
+      github: "https://github.com/renanfrontend/ignite-timer",
+    },
+    {
+      id: 6,
+      name: "GitHub Blog",
+      description: "A blog platform that uses GitHub Issues as a CMS, allowing developers to write posts using Markdown.",
+      technologies: ["React", "TypeScript", "GitHub API", "Axios"],
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5530&q=80",
+      github: "https://github.com/renanfrontend/github-blog",
     },
   ]);
 
@@ -85,7 +102,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={project.id}

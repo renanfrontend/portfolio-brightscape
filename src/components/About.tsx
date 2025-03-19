@@ -11,8 +11,13 @@ import {
   Layers, 
   Server, 
   Settings, 
-  Terminal
+  Terminal,
+  Palette,
+  Briefcase,
+  BookOpen,
+  Cpu
 } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function About() {
   const { t } = useLanguage();
@@ -40,15 +45,18 @@ export default function About() {
   }, []);
 
   const skills = [
-    { name: "HTML/CSS", icon: <Layout size={20} /> },
     { name: "JavaScript", icon: <Code2 size={20} /> },
-    { name: "TypeScript", icon: <Terminal size={20} /> },
     { name: "React", icon: <Layers size={20} /> },
-    { name: "Next.js", icon: <Server size={20} /> },
-    { name: "Node.js", icon: <Settings size={20} /> },
+    { name: "TypeScript", icon: <Terminal size={20} /> },
+    { name: "HTML/CSS", icon: <Layout size={20} /> },
+    { name: "Node.js", icon: <Server size={20} /> },
+    { name: "Next.js", icon: <Cpu size={20} /> },
     { name: "SQL/NoSQL", icon: <Database size={20} /> },
     { name: "UI/UX Design", icon: <Figma size={20} /> },
     { name: "Responsive Design", icon: <Globe size={20} /> },
+    { name: "Design Systems", icon: <Palette size={20} /> },
+    { name: "Jest/Testing", icon: <BookOpen size={20} /> },
+    { name: "Git/GitHub", icon: <Briefcase size={20} /> },
   ];
 
   return (
@@ -63,15 +71,23 @@ export default function About() {
           </div>
 
           <div className="space-y-16">
-            <div className="animate-on-scroll" style={{ "--animation-delay": "0.1s" } as React.CSSProperties}>
-              <p className="text-lg leading-relaxed mb-6">
-                {t("about.background")}
-              </p>
+            <div className="flex flex-col md:flex-row gap-10 items-center animate-on-scroll" style={{ "--animation-delay": "0.1s" } as React.CSSProperties}>
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
+                <Avatar className="w-full h-full">
+                  <AvatarImage src="https://media.licdn.com/dms/image/D4D03AQHdOSfA4XFdXg/profile-displayphoto-shrink_800_800/0/1696882188737?e=1719446400&v=beta&t=Ydp0i31FMCx1a49WTfdM5bAg4D4BQJLk6s9cGDsUWVI" alt="Renan Santos" />
+                  <AvatarFallback>RS</AvatarFallback>
+                </Avatar>
+              </div>
+              <div className="flex-1">
+                <p className="text-lg leading-relaxed mb-6">
+                  {t("about.background")}
+                </p>
+              </div>
             </div>
 
             <div className="animate-on-scroll" style={{ "--animation-delay": "0.2s" } as React.CSSProperties}>
               <h3 className="text-2xl font-semibold mb-6">{t("about.skills")}</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {skills.map((skill, index) => (
                   <div
                     key={index}
@@ -93,14 +109,14 @@ export default function About() {
                     <div className="w-4 h-4 rounded-full bg-primary"></div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h4 className="text-xl font-medium">{t("about.currentRole")}</h4>
+                    <h4 className="text-xl font-medium">Front-end Developer at Cora</h4>
                     <div className="flex items-center gap-1 text-muted-foreground">
                       <Calendar size={16} />
-                      <span>{t("about.currentRoleDate")}</span>
+                      <span>Mar 2022 - Present</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground">
-                    {t("about.currentRoleDescription")}
+                    Working with React, TypeScript, and Next.js to develop financial solutions for SMEs. Leading frontend initiatives, implementing design systems, and improving performance.
                   </p>
                 </div>
 
@@ -109,14 +125,14 @@ export default function About() {
                     <div className="w-4 h-4 rounded-full bg-primary"></div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h4 className="text-xl font-medium">{t("about.previousRole")}</h4>
+                    <h4 className="text-xl font-medium">Front-end Developer at Dasa</h4>
                     <div className="flex items-center gap-1 text-muted-foreground">
                       <Calendar size={16} />
-                      <span>{t("about.previousRoleDate")}</span>
+                      <span>Nov 2021 - Mar 2022</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground">
-                    {t("about.previousRoleDescription")}
+                    Developed web applications for healthcare solutions using React and TypeScript. Collaborated with designers and backend developers to create intuitive user interfaces.
                   </p>
                 </div>
 
@@ -125,14 +141,14 @@ export default function About() {
                     <div className="w-4 h-4 rounded-full bg-primary"></div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h4 className="text-xl font-medium">{t("about.earlierRole")}</h4>
+                    <h4 className="text-xl font-medium">Front-end Developer at Stoodi</h4>
                     <div className="flex items-center gap-1 text-muted-foreground">
                       <Calendar size={16} />
-                      <span>{t("about.earlierRoleDate")}</span>
+                      <span>Nov 2018 - Nov 2021</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground">
-                    {t("about.earlierRoleDescription")}
+                    Built educational platforms using React and JavaScript. Implemented responsive designs, interactive features, and optimized performance for an enhanced learning experience.
                   </p>
                 </div>
               </div>
@@ -146,14 +162,14 @@ export default function About() {
                   <div className="w-4 h-4 rounded-full bg-primary"></div>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                  <h4 className="text-xl font-medium">{t("about.education1")}</h4>
+                  <h4 className="text-xl font-medium">Technologist, Analysis and Systems Development</h4>
                   <div className="flex items-center gap-1 text-muted-foreground">
                     <Calendar size={16} />
-                    <span>{t("about.education1Date")}</span>
+                    <span>2016 - 2019</span>
                   </div>
                 </div>
                 <p className="text-muted-foreground">
-                  {t("about.education1Location")}
+                  FATEC - Faculty of Technology of São Paulo
                 </p>
               </div>
             </div>

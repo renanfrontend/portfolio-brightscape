@@ -11,10 +11,13 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
+// Define a recursive type for nested translations
+interface TranslationValue {
+  [key: string]: string | TranslationValue;
+}
+
 interface Translations {
-  [key: string]: {
-    [key: string]: string;
-  };
+  [key: string]: TranslationValue;
 }
 
 const translations: Translations = {
@@ -57,7 +60,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       translation = translation[k];
     }
     
-    return translation;
+    return translation as string;
   };
 
   const value = {

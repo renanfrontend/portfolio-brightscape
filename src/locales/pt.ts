@@ -15,8 +15,8 @@ const ptTranslations = {
   },
   about: {
     title: "Sobre Mim",
-    description: "Engenheiro Frontend Sênior com experiência em construir aplicações web performáticas, acessíveis e bonitas.",
-    background: "Com mais de 5 anos de experiência em desenvolvimento frontend, trabalhei com diversos times para entregar experiências excepcionais aos usuários. Minha expertise inclui React, TypeScript e arquiteturas frontend modernas.",
+    description: "Engenheiro Frontend Sênior com mais de 5 anos de experiência na construção de aplicações web performáticas, acessíveis e bonitas.",
+    background: "Como engenheiro frontend apaixonado, me especializo na criação de interfaces de usuário intuitivas e responsivas com React, TypeScript e Next.js. Tenho uma forte experiência no desenvolvimento de aplicações de nível empresarial, implementação de design systems e otimização de performance web. Estou constantemente aprendendo novas tecnologias para oferecer experiências digitais excepcionais.",
     skills: "Habilidades",
     experience: "Experiência",
     education: "Educação",
@@ -35,7 +35,7 @@ const ptTranslations = {
   },
   projects: {
     title: "Meus Projetos",
-    description: "Uma seleção dos meus projetos recentes demonstrando minhas habilidades e experiência.",
+    description: "Uma seleção dos meus projetos recentes demonstrando minhas habilidades e experiência com React, TypeScript e tecnologias frontend modernas.",
     viewProject: "Ver Projeto",
     viewCode: "Ver Código",
     technologies: "Tecnologias:",
