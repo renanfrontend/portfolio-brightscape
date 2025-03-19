@@ -74,7 +74,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row gap-10 items-center animate-on-scroll" style={{ "--animation-delay": "0.1s" } as React.CSSProperties}>
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
                 <Avatar className="w-full h-full">
-                  <AvatarImage src="https://media.licdn.com/dms/image/D4D03AQHdOSfA4XFdXg/profile-displayphoto-shrink_800_800/0/1696882188737?e=1719446400&v=beta&t=Ydp0i31FMCx1a49WTfdM5bAg4D4BQJLk6s9cGDsUWVI" alt="Renan Santos" />
+                  <AvatarImage src="https://avatars.githubusercontent.com/u/62774550" alt="Renan Santos" />
                   <AvatarFallback>RS</AvatarFallback>
                 </Avatar>
               </div>
@@ -109,14 +109,14 @@ export default function About() {
                     <div className="w-4 h-4 rounded-full bg-primary"></div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h4 className="text-xl font-medium">Front-end Developer at Cora</h4>
+                    <h4 className="text-xl font-medium">{t("about.currentRole")}</h4>
                     <div className="flex items-center gap-1 text-muted-foreground">
                       <Calendar size={16} />
-                      <span>Mar 2022 - Present</span>
+                      <span>{t("about.currentRoleDate")}</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground">
-                    Working with React, TypeScript, and Next.js to develop financial solutions for SMEs. Leading frontend initiatives, implementing design systems, and improving performance.
+                    {t("about.currentRoleDescription")}
                   </p>
                 </div>
 
@@ -125,14 +125,14 @@ export default function About() {
                     <div className="w-4 h-4 rounded-full bg-primary"></div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h4 className="text-xl font-medium">Front-end Developer at Dasa</h4>
+                    <h4 className="text-xl font-medium">{t("about.previousRole")}</h4>
                     <div className="flex items-center gap-1 text-muted-foreground">
                       <Calendar size={16} />
-                      <span>Nov 2021 - Mar 2022</span>
+                      <span>{t("about.previousRoleDate")}</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground">
-                    Developed web applications for healthcare solutions using React and TypeScript. Collaborated with designers and backend developers to create intuitive user interfaces.
+                    {t("about.previousRoleDescription")}
                   </p>
                 </div>
 
@@ -141,14 +141,14 @@ export default function About() {
                     <div className="w-4 h-4 rounded-full bg-primary"></div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                    <h4 className="text-xl font-medium">Front-end Developer at Stoodi</h4>
+                    <h4 className="text-xl font-medium">{t("about.earlierRole")}</h4>
                     <div className="flex items-center gap-1 text-muted-foreground">
                       <Calendar size={16} />
-                      <span>Nov 2018 - Nov 2021</span>
+                      <span>{t("about.earlierRoleDate")}</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground">
-                    Built educational platforms using React and JavaScript. Implemented responsive designs, interactive features, and optimized performance for an enhanced learning experience.
+                    {t("about.earlierRoleDescription")}
                   </p>
                 </div>
               </div>
@@ -162,14 +162,14 @@ export default function About() {
                   <div className="w-4 h-4 rounded-full bg-primary"></div>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                  <h4 className="text-xl font-medium">Technologist, Analysis and Systems Development</h4>
+                  <h4 className="text-xl font-medium">{t("about.education1")}</h4>
                   <div className="flex items-center gap-1 text-muted-foreground">
                     <Calendar size={16} />
-                    <span>2016 - 2019</span>
+                    <span>{t("about.education1Date")}</span>
                   </div>
                 </div>
                 <p className="text-muted-foreground">
-                  FATEC - Faculty of Technology of São Paulo
+                  {t("about.education1Location")}
                 </p>
               </div>
             </div>
