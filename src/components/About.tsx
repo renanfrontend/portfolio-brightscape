@@ -74,7 +74,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row gap-10 items-center animate-on-scroll" style={{ "--animation-delay": "0.1s" } as React.CSSProperties}>
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
                 <Avatar className="w-full h-full">
-                  <AvatarImage src="https://avatars.githubusercontent.com/u/62774550" alt="Renan Santos" />
+                  <AvatarImage src="https://github.com/renanfrontend.png" alt="Renan Santos" />
                   <AvatarFallback>RS</AvatarFallback>
                 </Avatar>
               </div>
