@@ -1,0 +1,63 @@
+
+const enTranslations = {
+  nav: {
+    home: "Home",
+    about: "About",
+    projects: "Projects",
+    contact: "Contact",
+  },
+  hero: {
+    greeting: "Hello, I'm",
+    title: "Senior Frontend Engineer",
+    description: "Building modern and elegant web experiences",
+    cta: "View Projects",
+    contact: "Get in Touch",
+  },
+  about: {
+    title: "About Me",
+    description: "Senior Frontend Engineer with experience in building performant, accessible and beautiful web applications.",
+    background: "With over 5 years of experience in frontend development, I've worked with diverse teams to deliver exceptional user experiences. My expertise includes React, TypeScript, and modern frontend architectures.",
+    skills: "Skills",
+    experience: "Experience",
+    education: "Education",
+    currentRole: "Front-end Developer at Cora",
+    currentRoleDate: "Mar 2022 - Present",
+    currentRoleDescription: "Working as a front-end developer at Cora, a financial technology company that offers digital accounts, credit cards and cash management products for small and medium-sized companies.",
+    previousRole: "Front-end Developer at Dasa",
+    previousRoleDate: "Nov 2021 - Mar 2022",
+    previousRoleDescription: "Worked as a front-end developer at Dasa, the largest diagnostic medicine company in Latin America.",
+    earlierRole: "Frontend Developer at Stoodi",
+    earlierRoleDate: "Nov 2018 - Nov 2021",
+    earlierRoleDescription: "Worked as a front-end developer at Stoodi, an online education platform.",
+    education1: "Technologist, Systems Analysis and Development",
+    education1Location: "FATEC - Faculty of Technology of São Paulo",
+    education1Date: "2016 - 2019",
+  },
+  projects: {
+    title: "My Projects",
+    description: "A selection of my recent projects showcasing my skills and experience.",
+    viewProject: "View Project",
+    viewCode: "View Code",
+    technologies: "Technologies:",
+  },
+  contact: {
+    title: "Get in Touch",
+    description: "Feel free to reach out if you're looking for a developer, have a question, or just want to connect.",
+    formName: "Name",
+    formEmail: "Email",
+    formMessage: "Message",
+    formSubmit: "Send Message",
+    contactInfo: "Contact Information",
+    email: "Email",
+    location: "Location",
+    locationValue: "São Paulo, Brazil",
+    phone: "Phone",
+    linksTitle: "Links",
+  },
+  footer: {
+    rights: "All rights reserved",
+    madeWith: "Made with",
+  },
+};
+
+export default enTranslations;
